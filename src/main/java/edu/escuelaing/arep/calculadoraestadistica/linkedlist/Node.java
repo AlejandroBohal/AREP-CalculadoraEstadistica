@@ -4,38 +4,38 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class Node {
-    private BigDecimal data;
-    private Node leftNode;
-    private Node rightNode;
+public class Node<E> {
+    private E data;
+    private Node<E> leftNode;
+    private Node<E> rightNode;
 
-    public Node(BigDecimal data){
+    public Node(E data){
         this.data = data;
         leftNode = null;
         rightNode = null;
     }
 
-    public BigDecimal getData() {
+    public E getData() {
         return data;
     }
 
-    public void setData(BigDecimal data) {
+    public void setData(E data) {
         this.data = data;
     }
 
-    public Node getLeftNode() {
+    public Node<E> getLeftNode() {
         return leftNode;
     }
 
-    public void setLeftNode(Node leftNode) {
+    public void setLeftNode(Node<E> leftNode) {
         this.leftNode = leftNode;
     }
 
-    public Node getRightNode() {
+    public Node<E> getRightNode() {
         return rightNode;
     }
 
-    public void setRightNode(Node rightNode) {
+    public void setRightNode(Node<E> rightNode) {
         this.rightNode = rightNode;
     }
 }
