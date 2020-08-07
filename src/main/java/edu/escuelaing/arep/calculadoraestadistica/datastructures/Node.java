@@ -36,4 +36,7 @@ public class Node<E> {
     public void setRightNode(Node<E> rightNode) {
         this.rightNode = rightNode;
     }
+    public boolean equals(Node<E> compare){
+        return compare.getData() == this.data;
+    }
 }
