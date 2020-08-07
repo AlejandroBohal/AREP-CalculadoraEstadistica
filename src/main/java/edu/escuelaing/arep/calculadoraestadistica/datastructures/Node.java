@@ -1,8 +1,6 @@
-package edu.escuelaing.arep.calculadoraestadistica.linkedlist;
+package edu.escuelaing.arep.calculadoraestadistica.datastructures;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.LinkedList;
+
 
 public class Node<E> {
     private E data;
