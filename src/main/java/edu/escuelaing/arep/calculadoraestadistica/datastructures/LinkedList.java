@@ -5,24 +5,28 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- *
  * Double Linked List Implementation
  * the linked list its doubly linked.
  *
- * @param <E>
- * @author Sergio Alejandro Bohórquez Álzate
+ * @param <E> Type of node linked list
+ * @author Sergio Alejandro Bohorquez Alzate
  */
 public class LinkedList<E> implements Iterable<E>  {
+
     private Node<E> firstNode;
     private Node<E> lastNode;
     private int size = 0;
+
+    /**
+     * Instantiates a new Linked list.
+     */
     public LinkedList(){
     }
 
     /**
      * Adds an element to the end of the doubly-linked list.
-     * @param data element to add , the type of this element is generic(any).
      *
+     * @param data element to add , the type of this element is generic(any).
      */
     public void add(E data){
         Node<E> node = new Node<E>(data);
@@ -39,7 +43,9 @@ public class LinkedList<E> implements Iterable<E>  {
 
     /**
      * Removes a node from the left side of the linked list and unlink it.
+     *
      * @return deletedNode returns the first element removed
+     * @throws NoSuchElementException the no such element exception
      */
     public E remove() throws NoSuchElementException{
         if (size >0){
@@ -60,6 +66,7 @@ public class LinkedList<E> implements Iterable<E>  {
 
     /**
      * Gets a node given an index (data).
+     *
      * @param index number of the searched node
      * @return data of the node
      * @throws IndexOutOfBoundsException throws if the node with index couldn't be found.
@@ -122,7 +129,8 @@ public class LinkedList<E> implements Iterable<E>  {
 
     /**
      * Gets the first node of the linked list (Left)
-     * @return firstNode
+     *
+     * @return firstNode first node
      */
     public Node<E> getFirstNode() {
         return firstNode;
@@ -130,6 +138,7 @@ public class LinkedList<E> implements Iterable<E>  {
 
     /**
      * Sets first node to a given node.
+     *
      * @param firstNode node given.
      */
     public void setFirstNode(Node<E> firstNode) {
@@ -138,6 +147,7 @@ public class LinkedList<E> implements Iterable<E>  {
 
     /**
      * Gets last node of linked list (Right)
+     *
      * @return lastNode of linked list
      */
     public Node<E> getLastNode() {
@@ -146,6 +156,7 @@ public class LinkedList<E> implements Iterable<E>  {
 
     /**
      * Sets last node to a given node.
+     *
      * @param lastNode node given
      */
     public void setLastNode(Node<E> lastNode) {
@@ -154,7 +165,8 @@ public class LinkedList<E> implements Iterable<E>  {
 
     /**
      * Returns size of the LinkedList
-     * @return size
+     *
+     * @return size size
      */
     public int getSize() {
         return size;
@@ -162,6 +174,7 @@ public class LinkedList<E> implements Iterable<E>  {
 
     /**
      * Sets size to the linkedlist (not recommended)
+     *
      * @param size given size.
      */
     public void setSize(int size) {

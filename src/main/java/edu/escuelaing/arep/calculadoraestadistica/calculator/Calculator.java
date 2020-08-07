@@ -6,8 +6,10 @@ import edu.escuelaing.arep.calculadoraestadistica.datastructures.LinkedList;
 import java.math.BigDecimal;
 
 /**
- *
- *
+ *Statistical calculator that helps calculate the
+ *arithmetic mean and standard deviation
+ * @author Sergio Alejandro Bohorquez Alzate
+ * @version 1.0
  */
 public class Calculator
 {

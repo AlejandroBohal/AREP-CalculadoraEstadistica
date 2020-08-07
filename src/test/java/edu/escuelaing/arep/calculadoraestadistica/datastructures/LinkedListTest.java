@@ -9,10 +9,33 @@ import java.math.BigDecimal;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+/**
+ * The type Linked list test.
+ */
 public class LinkedListTest {
-    LinkedList<Double> dataSet1,dataSet2;
+    /**
+     * The Data set 1 used for the test.
+     */
+    LinkedList<Double> dataSet1, /**
+     * The Data set 2 used for the test..
+     */
+    dataSet2;
+    /**
+     * The Data set 3 used for the test..
+     */
     LinkedList<BigDecimal> dataSet3;
-    LinkedList<String> dataSet5,dataSet6;
+    /**
+     * The Data set 5 used for the test..
+     */
+    LinkedList<String> dataSet5, /**
+     * The Data set 6 used for the test..
+     */
+    dataSet6;
+
+    /**
+     * Setup.
+     * Initialize the data Set structures that will be used.
+     */
     @Before
     public void setup(){
 
@@ -22,12 +45,20 @@ public class LinkedListTest {
         dataSet5 = new LinkedList<String>();
         dataSet6 = new LinkedList<String>();
     }
+
+    /**
+     * Should create linked list.
+     */
     @Test
     public void shouldCreateLinkedList(){
         String classTest = "class " + "edu.escuelaing.arep.calculadoraestadistica.datastructures.LinkedList";
         Assert.assertEquals(dataSet1.getClass().toString(),classTest);
         Assert.assertNotNull(dataSet1);
     }
+
+    /**
+     * Should add  elements to linked list.
+     */
     @Test
     public void shouldAddToLinkedList(){
         double[] doubles = {2.44,0.04,0.03,0.12,1.33,3.12};
@@ -43,6 +74,10 @@ public class LinkedListTest {
         }
 
     }
+
+    /**
+     * Should add elements to linked list with order.
+     */
     @Test
     public void shouldAddWithOrder(){
         dataSet2.add(0.0);
@@ -54,6 +89,10 @@ public class LinkedListTest {
         Assert.assertEquals(dataSet2.get(1),0.3,0.0);
         Assert.assertEquals(dataSet2.get(2),0.4,0.0);
     }
+
+    /**
+     * Should get next elements in linked list using iterator..
+     */
     @Test
     public void shouldGetNext(){
         dataSet5.add("Hello");
@@ -64,6 +103,10 @@ public class LinkedListTest {
         Assert.assertEquals(iterator.next(),"World");
         Assert.assertEquals(iterator.next(),":)");
     }
+
+    /**
+     * Should remove an element from linkedlist.
+     */
     @Test
     public void shouldDoRemove(){
         dataSet3.add(new BigDecimal("0.15"));
@@ -84,6 +127,10 @@ public class LinkedListTest {
         }
 
     }
+
+    /**
+     * Should get size of linked list.
+     */
     @Test
     public void shouldGetSize(){
         Assert.assertEquals(dataSet6.getSize(),0);
