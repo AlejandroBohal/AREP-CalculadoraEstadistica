@@ -80,7 +80,6 @@ public class LinkedListTest {
             dataSet3.remove();
             Assert.fail();
         }catch (NoSuchElementException e){
-            System.out.println("hola");
             Assert.assertTrue(true);
         }
 
