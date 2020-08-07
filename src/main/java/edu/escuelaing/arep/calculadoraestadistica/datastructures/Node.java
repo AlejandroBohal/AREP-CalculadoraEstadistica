@@ -6,7 +6,7 @@ public class Node<E> {
     private E data;
     private Node<E> leftNode;
     private Node<E> rightNode;
-
+    
     public Node(E data){
         this.data = data;
         leftNode = null;
