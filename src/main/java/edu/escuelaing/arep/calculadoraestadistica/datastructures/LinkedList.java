@@ -7,6 +7,7 @@ import java.util.NoSuchElementException;
 /**
  *
  * Double Linked List Implementation
+ * the linked list its doubly linked.
  *
  * @param <E>
  * @author Sergio Alejandro Bohórquez Álzate
