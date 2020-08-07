@@ -41,14 +41,14 @@ public class Node<E> {
 
     /**
      * Gets the left node chained to this object.
-     * @return left node.
+     * @return leftNode
      */
     public Node<E> getLeftNode() {
         return leftNode;
     }
     /**
      * Sets the left node chained to this object.
-     * @return left node.
+     * @param leftNode left node given
      */
     public void setLeftNode(Node<E> leftNode) {
         this.leftNode = leftNode;
@@ -56,7 +56,7 @@ public class Node<E> {
 
     /**
      * Gets the right node chained to this object.
-     * @return right node.
+     * @return rightNode
      */
     public Node<E> getRightNode() {
         return rightNode;
@@ -64,7 +64,7 @@ public class Node<E> {
 
     /**
      * Gets the right node chained to this object.
-     * @return right node.
+     * @param rightNode right node given.
      */
     public void setRightNode(Node<E> rightNode) {
         this.rightNode = rightNode;

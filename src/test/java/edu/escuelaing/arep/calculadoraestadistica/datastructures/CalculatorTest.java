@@ -5,9 +5,41 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * The type Calculator test.
+ */
 public class CalculatorTest {
+    /**
+     * The Calculator used for calculate mean and standard deviation
+     */
     Calculator calculator;
-    LinkedList<Double> dataSet1,dataSet2,dataSet3,dataSet4,dataSet5,dataSet6,dataSet7;
+    /**
+     * The Data set 1.
+     */
+    LinkedList<Double> dataSet1, /**
+     * The Data set 2.
+     */
+    dataSet2, /**
+     * The Data set 3.
+     */
+    dataSet3, /**
+     * The Data set 4.
+     */
+    dataSet4, /**
+     * The Data set 5.
+     */
+    dataSet5, /**
+     * The Data set 6.
+     */
+    dataSet6, /**
+     * The Data set 7.
+     */
+    dataSet7;
+
+    /**
+     * Setup.
+     * Initialize the data Set structures that will be used.
+     */
     @Before
     public void setup(){
         calculator = new Calculator();
@@ -19,6 +51,10 @@ public class CalculatorTest {
         dataSet6 = createLinkedList(new double[]{18.22,99.68,33.36,89.39,97.98,82.55,28.05,39.52,57.78,82.16});
         dataSet7 = createLinkedList(new double[]{64.02,32.59,77.55,28.44,60.04,70.36,51.30,90.17,12.14,52.02});
     }
+
+    /**
+     * Should calculate mean.
+     */
     @Test
     public void shouldCalculateMean() {
         Assert.assertEquals(550.6, calculator.calculateMean(dataSet1), 0.0);
@@ -29,6 +65,10 @@ public class CalculatorTest {
         Assert.assertEquals(62.86, calculator.calculateMean(dataSet6), 0.01);
         Assert.assertEquals(53.86, calculator.calculateMean(dataSet7), 0.01);
     }
+
+    /**
+     * Should not calculate mean.
+     */
     @Test
     public void shouldNotCalculateMean() {
         Assert.assertNotEquals(321.21, calculator.calculateMean(dataSet1), 0.0);
@@ -39,6 +79,10 @@ public class CalculatorTest {
         Assert.assertNotEquals(44.02, calculator.calculateMean(dataSet6), 0.01);
         Assert.assertNotEquals(32.22, calculator.calculateMean(dataSet7), 0.01);
     }
+
+    /**
+     * Should calculate standard deviation.
+     */
     @Test
     public void shouldCalculateStandardDeviation(){
         Assert.assertEquals(572.03, calculator.calculateStandardDeviation(dataSet1), 0.05);
@@ -49,6 +93,10 @@ public class CalculatorTest {
         Assert.assertEquals(31.08, calculator.calculateStandardDeviation(dataSet6), 0.01);
         Assert.assertEquals(23.90, calculator.calculateStandardDeviation(dataSet7), 0.01);
     }
+
+    /**
+     * Should not calculate standard deviation.
+     */
     @Test
     public void shouldNotCalculateStandardDeviation(){
         Assert.assertNotEquals(57.03, calculator.calculateStandardDeviation(dataSet1), 0.05);
