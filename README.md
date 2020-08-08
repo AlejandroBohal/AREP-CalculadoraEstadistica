@@ -20,7 +20,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-First we will use to clone this repository with the following command.
+we will first clone the repository with the following command
 
 ```
 Git clone https://github.com/AlejandroBohal/AREP-CalculadoraEstadistica
