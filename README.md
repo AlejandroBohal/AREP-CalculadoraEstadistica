@@ -73,6 +73,10 @@ Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
 
 * [Maven](https://maven.apache.org/) - Dependency Management
 
+* CircleCI for CI
+
+[![CircleCI](https://circleci.com/gh/AlejandroBohal/AREP-CalculadoraEstadistica.svg?style=svg)](https://circleci.com/gh/AlejandroBohal/AREP-CalculadoraEstadistica)
+
 ## Documentation
 
 If you need additional information about the program structure or about some functionality, you can generate the documentation with the following command
@@ -103,5 +107,5 @@ Student at the Colombian School of Engineering
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU v3.0 - see the [LICENSE.md](LICENSE.md) file for details
 
