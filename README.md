@@ -79,6 +79,9 @@ Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
 
 ## Documentation
 
+Documentation website:
+https://alejandrobohal.github.io/AREP-CalculadoraEstadistica/apidocs/index.html
+
 If you need additional information about the program structure or about some functionality, you can generate the documentation with the following command
 ```
 mvn javadoc:javadoc
