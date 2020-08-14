@@ -81,7 +81,7 @@ Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
 
 This repository contains a paper with documentation about the process carried out for the creation of the program, the following link will redirect you to it:
 
-[](https://github.com/AlejandroBohal/AREP-CalculadoraEstadistica/blob/master/Documentation.pdf)
+https://github.com/AlejandroBohal/AREP-CalculadoraEstadistica/blob/master/Documentation.pdf
 
 Documentation website:
 https://alejandrobohal.github.io/AREP-CalculadoraEstadistica/
